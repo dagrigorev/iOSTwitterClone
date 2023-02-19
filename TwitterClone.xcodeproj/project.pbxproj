@@ -11,6 +11,12 @@
 		B20E0F1B29A2C07500EF5479 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20E0F1A29A2C07500EF5479 /* ContentView.swift */; };
 		B20E0F1D29A2C07600EF5479 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B20E0F1C29A2C07600EF5479 /* Assets.xcassets */; };
 		B20E0F2029A2C07600EF5479 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B20E0F1F29A2C07600EF5479 /* Preview Assets.xcassets */; };
+		B20E0F3029A2C1C100EF5479 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20E0F2F29A2C1C100EF5479 /* FeedView.swift */; };
+		B20E0F3529A2C26D00EF5479 /* TweetsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20E0F3429A2C26D00EF5479 /* TweetsRowView.swift */; };
+		B20E0F3829A2C6F400EF5479 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20E0F3729A2C6F400EF5479 /* MainTabView.swift */; };
+		B20E0F3F29A2C8CD00EF5479 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20E0F3E29A2C8CD00EF5479 /* ExploreView.swift */; };
+		B20E0F4129A2C8E400EF5479 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20E0F4029A2C8E400EF5479 /* NotificationsView.swift */; };
+		B20E0F4329A2C8F600EF5479 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20E0F4229A2C8F600EF5479 /* MessagesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		B20E0F1A29A2C07500EF5479 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B20E0F1C29A2C07600EF5479 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B20E0F1F29A2C07600EF5479 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B20E0F2F29A2C1C100EF5479 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		B20E0F3429A2C26D00EF5479 /* TweetsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetsRowView.swift; sourceTree = "<group>"; };
+		B20E0F3729A2C6F400EF5479 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		B20E0F3E29A2C8CD00EF5479 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
+		B20E0F4029A2C8E400EF5479 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
+		B20E0F4229A2C8F600EF5479 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +63,10 @@
 		B20E0F1729A2C07500EF5479 /* TwitterClone */ = {
 			isa = PBXGroup;
 			children = (
+				B20E0F2929A2C16800EF5479 /* Core */,
+				B20E0F2829A2C15E00EF5479 /* Service */,
+				B20E0F2729A2C15600EF5479 /* Model */,
+				B20E0F2629A2C14900EF5479 /* Extensions */,
 				B20E0F1829A2C07500EF5479 /* TwitterCloneApp.swift */,
 				B20E0F1A29A2C07500EF5479 /* ContentView.swift */,
 				B20E0F1C29A2C07600EF5479 /* Assets.xcassets */,
@@ -65,6 +81,120 @@
 				B20E0F1F29A2C07600EF5479 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B20E0F2629A2C14900EF5479 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B20E0F2729A2C15600EF5479 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B20E0F2829A2C15E00EF5479 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		B20E0F2929A2C16800EF5479 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B20E0F2C29A2C18900EF5479 /* Components */,
+				B20E0F3C29A2C82C00EF5479 /* Explore */,
+				B20E0F3D29A2C87700EF5479 /* Profile */,
+				B20E0F3B29A2C81A00EF5479 /* Notifications */,
+				B20E0F3A29A2C81700EF5479 /* Messages */,
+				B20E0F3629A2C6E000EF5479 /* MainTab */,
+				B20E0F2B29A2C18200EF5479 /* Feed */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		B20E0F2B29A2C18200EF5479 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				B20E0F2E29A2C1AB00EF5479 /* View */,
+				B20E0F2D29A2C1A400EF5479 /* ViewModels */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		B20E0F2C29A2C18900EF5479 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B20E0F3329A2C25E00EF5479 /* Tweets */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B20E0F2D29A2C1A400EF5479 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B20E0F2E29A2C1AB00EF5479 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B20E0F2F29A2C1C100EF5479 /* FeedView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B20E0F3329A2C25E00EF5479 /* Tweets */ = {
+			isa = PBXGroup;
+			children = (
+				B20E0F3429A2C26D00EF5479 /* TweetsRowView.swift */,
+			);
+			path = Tweets;
+			sourceTree = "<group>";
+		};
+		B20E0F3629A2C6E000EF5479 /* MainTab */ = {
+			isa = PBXGroup;
+			children = (
+				B20E0F3729A2C6F400EF5479 /* MainTabView.swift */,
+			);
+			path = MainTab;
+			sourceTree = "<group>";
+		};
+		B20E0F3A29A2C81700EF5479 /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				B20E0F4229A2C8F600EF5479 /* MessagesView.swift */,
+			);
+			path = Messages;
+			sourceTree = "<group>";
+		};
+		B20E0F3B29A2C81A00EF5479 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				B20E0F4029A2C8E400EF5479 /* NotificationsView.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		B20E0F3C29A2C82C00EF5479 /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				B20E0F3E29A2C8CD00EF5479 /* ExploreView.swift */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		B20E0F3D29A2C87700EF5479 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +267,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B20E0F4329A2C8F600EF5479 /* MessagesView.swift in Sources */,
 				B20E0F1B29A2C07500EF5479 /* ContentView.swift in Sources */,
+				B20E0F3529A2C26D00EF5479 /* TweetsRowView.swift in Sources */,
+				B20E0F3029A2C1C100EF5479 /* FeedView.swift in Sources */,
 				B20E0F1929A2C07500EF5479 /* TwitterCloneApp.swift in Sources */,
+				B20E0F3F29A2C8CD00EF5479 /* ExploreView.swift in Sources */,
+				B20E0F3829A2C6F400EF5479 /* MainTabView.swift in Sources */,
+				B20E0F4129A2C8E400EF5479 /* NotificationsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
